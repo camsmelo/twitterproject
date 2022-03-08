@@ -16,14 +16,14 @@ export class TimelineComponent implements OnInit {
   public listTweet: List[] = [];
   public form: any;
   public showModal: boolean = false;
-
-  public deleteModalRef?: BsModalRef;
   @ViewChild('deleteModal') deleteModal: any;
 
   public selectTweet: List[] = [];
   modalRef?: BsModalRef;
+  public deleteModalRef?: BsModalRef;
 
-  today: number = Date.now();
+  public today: number = Date.now();
+  public hiddenDate: boolean = false;
 
 
   constructor(private modalService: BsModalService) { }
@@ -66,7 +66,6 @@ export class TimelineComponent implements OnInit {
     }
 
   }
-
 
   public deleteTweet(listPost: any): void {
     this.selectTweet = listPost;

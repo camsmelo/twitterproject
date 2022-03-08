@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- feed starts -->
-    <div class="feed">
+    <div class="feed justify-content-center">
       <div class="feed__header">
         <h2>Home</h2>
       </div>
@@ -45,7 +45,7 @@
               formControlName="text"
             />
           </div>
-          <span align="start">Caracteres restantes: </span>
+          <span align="start">Remaining characters: </span>
           <span align="end">{{ 130 - input.length }}</span>
           <button type="submit" class="tweetBox__tweetButton">Tweet</button>
         </form>
@@ -69,7 +69,7 @@
                 <span class="post__headerSpecial"
                   ><span class="material-icons post__badge"> verified </span
                   >@camilamelo </span>
-                  <span class="post__headerSpecial">{{ today | date: 'shortTime'}}</span>
+                    <span class="post__headerSpecial">{{ today | date: 's'}} s</span>
               </h3>
             </div>
 
